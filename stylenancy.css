@@ -1,0 +1,303 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.body{
+    
+    font-size: 16px;
+}
+
+header{
+    padding: 1.25em;
+    width: 100%;
+    
+}
+.menu-bar{
+  display: none;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 6.25em;
+}
+
+
+a{
+color:#fff;
+padding: 20px;
+text-decoration: none;
+display: inline-block;
+
+}
+
+a:hover{
+    color:rgb(166, 154, 177);
+}
+ul{
+    background-color:rgb(156, 75, 231); 
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+   
+}
+    
+span{
+    margin-right: 10px;
+}
+
+.section{
+    
+   
+    width:auto;
+    height: auto;
+    padding: 20px;
+    
+   
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+}
+.colum{
+    width: 50%;
+}
+.card{
+    width:90%;
+    height: 34.37em;
+    background-color: rgb(182, 236, 127);
+    padding: 1.25em;
+    margin: 1.7em;
+    text-align: center;
+    border-radius: 1.25em;
+
+}
+.card1{
+    width:37.5em;
+    height: 21.87em;
+    background-color: rgb(242, 205, 243);
+    padding: 1.25em;
+    margin: 1.87em;
+    border-radius: 1.25em;
+    
+
+  
+}
+.card2{
+    width:37.5em;
+    height: 21.87em;
+    background-color: rgb(242, 205, 243);;
+    padding: 1.25em;
+    margin-left: 31.2em;
+    border-radius: 1.25em;
+    
+   
+   
+}
+.img{
+    width: 50%;
+    border-radius: 60%;
+    padding: 1.87em ;
+    display: flex;
+    flex-direction: row;
+    
+    
+
+}
+
+.titulo{
+
+    font-weight: bold;
+    font-size: 5em;
+    padding: 20px;
+    color:rgb(156, 75, 231);
+    margin-top: 50px;
+}
+
+.informacion{
+    color:rgb(166, 154, 177);
+    padding: 20px;
+    
+}
+
+.pie{
+    width: 100%;
+    height: 6.25em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:1200px){
+    .card2{
+        
+    margin-left: 30px;
+    text-align: center;
+}
+     img{
+    width: 70%;
+}
+    .colum{
+        width: 80%;
+    }
+
+
+}
+
+
+@media screen and (max-width:992px){
+
+    .card2{
+        
+        margin-left: 30px;
+        text-align: center;
+    }
+
+.img{
+    width: 70%;
+
+}
+
+}
+
+
+@media screen and (max-width:780px){
+
+    .section1{
+        
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .img{
+        width: 80%;
+        
+    }
+    .contacto{
+        font-size: 15px;
+    }
+
+    
+       
+}
+
+
+@media screen and (max-width:650px){
+.body{
+    font-size: 10px;
+}
+
+.contacto{
+    font-size: 14px;
+}
+.card1{
+width:90%;
+height: 34.37em;
+background-color: rgb(182, 236, 127);
+padding: 1.25em;
+margin: 1.7em;
+text-align: center;
+border-radius: 1.25em;
+}
+.card2{
+width:90%;
+height: 34.37em;
+background-color: rgb(182, 236, 127);
+padding: 1.25em;
+margin: 1.7em;
+text-align: center;
+border-radius: 1.25em;
+}
+
+@media screen and (max-width:570px){
+
+    .contacto{
+        display: none;
+    }
+    .img{
+        width: 110%;
+       
+    }
+    .info{
+        margin-left: 40px;
+    }
+    .menu-bar{
+        width: 100%;
+        display: block;
+        background-color: rgb(220, 176, 221);
+    }
+    .section1{
+        margin-left: 30px;
+    }
+    
+    .menu-bar .boton-menu{
+    
+        display: block;
+        padding: 20px;
+        font-weight: bold;
+        box-sizing: border-box;
+        font-size: 25px;
+    }
+    .menu-bar span{
+        float: right;
+        font-size: 40px;
+    }
+    nav{
+        width: 80%;
+        height: auto ;
+        position: fixed;
+
+    }
+}
+
+@media screen and (max-width:420px){
+
+    .contacto{
+        display: none;
+    }
+
+    .img{
+        width: 140%;
+        
+    }
+
+
+    .section1{
+        margin-left: 10px;
+    
+    }
+
+    .section{
+        width: auto;
+        height:auto;
+        overflow: hidden;
+        font-size: 14px ;
+       
+
+    }
+    .colum{
+        width: 100%;
+        font-size: 12px;
+    }
+    .pie{
+        font-size: 13px;
+    }
+    
+}
+@media screen and (max-width:420px){
+
+
+
+
+
