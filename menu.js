@@ -7,7 +7,7 @@ function main (){
     
     //});
 
-}
+
 
        if(contador == 1){
             $("li").animate({

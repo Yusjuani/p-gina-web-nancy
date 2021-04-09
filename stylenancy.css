@@ -45,7 +45,10 @@ ul{
     flex-direction: row;
    
 }
-    
+   
+h2{
+ color:rgb(166, 154, 177);
+}
 span{
     margin-right: 10px;
 }
@@ -81,7 +84,7 @@ span{
 }
 .card1{
     width:37.5em;
-    height: 21.87em;
+    height: 100%;
     background-color: rgb(242, 205, 243);
     padding: 1.25em;
     margin: 1.87em;
@@ -92,7 +95,7 @@ span{
 }
 .card2{
     width:37.5em;
-    height: 21.87em;
+    height: 100%;
     background-color: rgb(242, 205, 243);;
     padding: 1.25em;
     margin-left: 31.2em;
@@ -188,7 +191,14 @@ span{
         font-size: 15px;
     }
 
-    
+    .card2{
+        height: 100%;
+
+}  
+    .card1{
+    height: 100%;
+
+}
        
 }
 
@@ -203,8 +213,10 @@ span{
 }
 .card1{
 width:90%;
-height: 34.37em;
-background-color: rgb(182, 236, 127);
+height: 100%;
+ border: 1px solid rgb(235, 94, 248);
+        background-color: rgb(234, 194, 238) ;
+        height: 100%;
 padding: 1.25em;
 margin: 1.7em;
 text-align: center;
@@ -212,8 +224,10 @@ border-radius: 1.25em;
 }
 .card2{
 width:90%;
-height: 34.37em;
-background-color: rgb(182, 236, 127);
+height: 100%;
+border: 1px solid rgb(235, 94, 248);
+background-color: rgb(234, 194, 238) ;
+height: 100%;
 padding: 1.25em;
 margin: 1.7em;
 text-align: center;
@@ -259,6 +273,19 @@ border-radius: 1.25em;
         position: fixed;
 
     }
+    .card2{
+        height: 100%;
+        border: 1px solid rgb(235, 94, 248);
+        background-color: rgb(234, 194, 238) ;
+       
+
+}
+    .card1{
+        border: 1px solid rgb(235, 94, 248);
+        background-color: rgb(234, 194, 238) ;
+        height: 100%;
+
+}
 }
 
 @media screen and (max-width:420px){
@@ -269,7 +296,9 @@ border-radius: 1.25em;
 
     .img{
         width: 140%;
-        
+        display: flex;
+        justify-content: row;
+        align-items: center;
     }
 
 
@@ -295,25 +324,26 @@ border-radius: 1.25em;
         font-size: 13px;
     }
     .allbody{
-        background-color: rgb(234, 194, 238);
+        background-color: rgb(56, 55, 56);
+        
     }
     .card1{
         
         border: 1px solid rgb(235, 94, 248);
         background-color: rgb(234, 194, 238) ;
+        height: 100%;
+       
 }
     .card2{
         
        border: 1px solid rgb(235, 94, 248);
         background-color: rgb(234, 194, 238) ;
+        height: 100%;
+       
 }
-    .card{
-        
-       border: 1px solid rgb(235, 94, 248);
-       background-color: rgb(234, 194, 238) ;
+    
 }
 }
-@media screen and (max-width:420px){
 
 
 
