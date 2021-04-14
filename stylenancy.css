@@ -252,7 +252,7 @@ border-radius: 1.25em;
         background-color: rgb(220, 176, 221);
     }
     .section1{
-        margin-left: 30px;
+        margin-left: 20px;
     }
     
     .menu-bar .boton-menu{
@@ -294,20 +294,23 @@ border-radius: 1.25em;
         display: none;
     }
 
+    .section1{
+       padding-left: 0;
+    }
+
     .img{
-        width: 140%;
-        display: flex;
-        justify-content: row;
+        width: 170%;
         align-items: center;
+        margin-right: -80px;
     }
 
 
-    .section1{
+    /*.section1{
         margin-left: 10px;
         
     
     }
-
+*/
     .section{
         width: auto;
         height:auto;
