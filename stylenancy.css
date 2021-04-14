@@ -53,6 +53,16 @@ span{
     margin-right: 10px;
 }
 
+.allbody{
+    
+   
+    width:auto;
+    height: auto;
+    padding: 30px 30px 30px 30px;
+    
+    
+   
+}
 .section{
     
    
@@ -60,8 +70,21 @@ span{
     height: auto;
     padding: 20px;
     
+    
    
 }
+
+.row{
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+
 
 .section1{
     display: flex;
@@ -72,38 +95,37 @@ span{
 .colum{
     width: 50%;
 }
-.card{
-    width:90%;
-    height: 34.37em;
-    background-color: rgb(182, 236, 127);
-    padding: 1.25em;
-    margin: 1.7em;
-    text-align: center;
-    border-radius: 1.25em;
 
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+   
+    
 }
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    
+}
+
+
+.fondo{
+    width:100%;
+   
+}
+.fondo1{
+    width:100%; 
+    
+}
+
+
 .card1{
-    width:37.5em;
-    height: 100%;
-    background-color: rgb(242, 205, 243);
-    padding: 1.25em;
-    margin: 1.87em;
-    border-radius: 1.25em;
-    
+    margin-left: 30px;
+ }
 
-  
-}
-.card2{
-    width:37.5em;
-    height: 100%;
-    background-color: rgb(242, 205, 243);;
-    padding: 1.25em;
-    margin-left: 31.2em;
-    border-radius: 1.25em;
-    
-   
-   
-}
 .img{
     width: 50%;
     border-radius: 60%;
@@ -140,36 +162,86 @@ span{
     text-decoration: none;
 }
 
+.youtube{
 
-@media screen and (max-width:1200px){
-    .card2{
-        
-    margin-left: 30px;
-    text-align: center;
+padding: 40px 40px  40px 40px;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
 }
-     img{
-    width: 70%;
-}
-    .colum{
-        width: 80%;
+
+.slider{
+
+   display: flex;
+   flex-direction: row;
+ 
+ 
+   
     }
 
+.tamaño{
 
+       width: 650px;
+         }
+
+.comentarios{
+
+          text-align: center;
+         
+        }
+
+   
+
+@media screen and (max-width:1200px){
+    
+    .img{
+    width: 70%;
+     }
+    .colum{
+        width: 80%;
+
+
+}
+.fondo{
+   
+    height: 100%;
+   
+}
+.fondo1{
+   
+    height:100%;
+}
+
+.tamaño{
+
+    width: 500px;
+      }
 }
 
 
 @media screen and (max-width:992px){
 
-    .card2{
-        
-        margin-left: 30px;
-        text-align: center;
-    }
+   
 
 .img{
-    width: 70%;
+    width: 100%;
 
 }
+.fondo{
+   width: 100%;
+    height: 100%;
+   
+}
+.fondo1{
+    width: 100%;
+    height:100%;
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+
+   
+  }
 
 }
 
@@ -180,6 +252,7 @@ span{
         
         flex-direction: column;
         text-align: center;
+    
         
     }
 
@@ -191,47 +264,52 @@ span{
         font-size: 15px;
     }
 
-    .card2{
-        height: 100%;
-
-}  
-    .card1{
-    height: 100%;
-
-}
-       
+    
 }
 
 
 @media screen and (max-width:650px){
+
 .body{
     font-size: 10px;
+}
+.img{
+  width: 100%;
 }
 
 .contacto{
     font-size: 14px;
 }
-.card1{
-width:90%;
-height: 100%;
- border: 1px solid rgb(235, 94, 248);
-        background-color: rgb(234, 194, 238) ;
-        height: 100%;
-padding: 1.25em;
-margin: 1.7em;
-text-align: center;
-border-radius: 1.25em;
-}
+
+.tamaño{
+
+    width: 400px;
+   
+      }
+
+.element{
+
+      display: none;
+       
+          }
+
+.element1{
+
+    display: none;
+             
+         }
+ .card1{
+
+    width: 300px;
+                     
+     }
+
 .card2{
-width:90%;
-height: 100%;
-border: 1px solid rgb(235, 94, 248);
-background-color: rgb(234, 194, 238) ;
-height: 100%;
-padding: 1.25em;
-margin: 1.7em;
-text-align: center;
-border-radius: 1.25em;
+
+     width: 300px;
+     padding-left: 30px;
+                              
+     }
 }
 
 @media screen and (max-width:570px){
@@ -239,14 +317,23 @@ border-radius: 1.25em;
     .contacto{
         display: none;
     }
+
+    .allbody{
+        background-color: rgb(68, 67, 67);
+        color:wheat;
+
+    }
+    
     .img{
         width: 110%;
+       align-items: center;
+      
        
     }
     .info{
         margin-left: 40px;
     }
-    .menu-bar{
+    /*.menu-bar{
         width: 100%;
         display: block;
         background-color: rgb(220, 176, 221);
@@ -272,20 +359,8 @@ border-radius: 1.25em;
         height: auto ;
         position: fixed;
 
-    }
-    .card2{
-        height: 100%;
-        border: 1px solid rgb(235, 94, 248);
-        background-color: rgb(234, 194, 238) ;
-       
-
-}
-    .card1{
-        border: 1px solid rgb(235, 94, 248);
-        background-color: rgb(234, 194, 238) ;
-        height: 100%;
-
-}
+    }*/
+    
 }
 
 @media screen and (max-width:420px){
@@ -293,7 +368,10 @@ border-radius: 1.25em;
     .contacto{
         display: none;
     }
-
+    .informacion{
+        font-size: 17px;
+    }
+    
     .section1{
        padding-left: 0;
     }
@@ -305,12 +383,6 @@ border-radius: 1.25em;
     }
 
 
-    /*.section1{
-        margin-left: 10px;
-        
-    
-    }
-*/
     .section{
         width: auto;
         height:auto;
@@ -322,30 +394,39 @@ border-radius: 1.25em;
     .colum{
         width: 100%;
         font-size: 12px;
+        padding:0;
     }
     .pie{
         font-size: 13px;
     }
-    .allbody{
-        background-color: rgb(56, 55, 56);
-        
-    }
-    .card1{
-        
-        border: 1px solid rgb(235, 94, 248);
-        background-color: rgb(234, 194, 238) ;
-        height: 100%;
-       
-}
     .card2{
-        
-       border: 1px solid rgb(235, 94, 248);
-        background-color: rgb(234, 194, 238) ;
-        height: 100%;
+
+        width: 300px;
+        padding: 10px 10px 10px 10px;
+                                 
+        }
+    .card1{
+
+        width: 300px;
+        padding: 10px 10px 10px 10px;
+        margin:0;
+                                     
+            }
+    .youtube{
        
+
+            padding: 40px 40px  40px 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+          
 }
-    
-}
+
+.slider{
+
+    display: none;
+                                 
+        }
 }
 
 
