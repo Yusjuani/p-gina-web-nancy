@@ -15,9 +15,17 @@ header{
     width: 100%;
     
 }
-.menu-bar{
-  display: none;
+
+.logo{
+    
+    display: none;
 }
+.toggle-btn{
+    
+    display: none;
+}
+
+
 
 .info{
     display: flex;
@@ -77,8 +85,7 @@ span{
    
     width:100%;
     
-    
-   
+ 
 }
 
 .row{
@@ -167,18 +174,16 @@ span{
     justify-content: center;
     padding: 20px;
     text-decoration: none;
+    background-color: rgb(156, 75, 231);
+}
+i{
+    width: 100px;
 }
 .pie2{
-    width: auto;
     text-align: center;
-    display: flex;
+    
     flex-direction: column;
     justify-content: flex-end;
-    color:#fff;
-    font-size:10px;
-    justify-self: center;
-    
-    
 }
 
 .youtube{
@@ -297,9 +302,6 @@ justify-content: center;
   width: 100%;
 }
 
-.contacto{
-    font-size: 14px;
-}
 
 .tamaño{
 
@@ -334,63 +336,93 @@ justify-content: center;
 
 @media screen and (max-width:570px){
 
-    .contacto{
-        display: none;
-    }
+*{
+    margin:0;
+    padding: 0;
 
-    .allbody{
-        background-color: rgb(68, 67, 67);
-        color:white;
+       }  
+
+.allbody{
+    background-color: rgb(68, 67, 67);
+    color:white;
 
     }
     
-    .img{
-        width: 110%;
-       align-items: center;
+.img{
+    display: none;
       
        
     }
-    .info{
-        margin-left: 40px;
+.info{
+    margin-left: 40px;
     }
-    .slider{
 
-        display: none;
-                                     
-            }
-    .comentarios{
+ul{
+        
+     list-style: none;
+    flex-direction: column;
+       
+    }
+                          
+.comentarios{
 
-         display: none;
+    display: none;
                                              
-          }
-    /*.menu-bar{
-        width: 100%;
-        display: block;
-        background-color: rgb(220, 176, 221);
-    }
-    .section1{
-        margin-left: 20px;
-    }
-    
-    .menu-bar .boton-menu{
-    
-        display: block;
-        padding: 20px;
-        font-weight: bold;
-        box-sizing: border-box;
-        font-size: 25px;
-    }
-    .menu-bar span{
-        float: right;
-        font-size: 40px;
-    }
-    nav{
-        width: 80%;
-        height: auto ;
-        position: fixed;
+        }
 
-    }*/
+ .toggle-btn{
     
+    display:block;
+       
+        }
+              
+ #sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;   
+    left: -200px;
+    transition: all 500ms linear;
+        
+        }
+
+ #sidebar.active{
+    left: 0;
+        }
+
+    
+ #sidebar ul li{
+    color:rgb(230,230,230,.9);
+    text-align: center;
+    padding: 15px 10px;
+    list-style: none;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+        
+        }
+
+.logo{
+    border-radius:50% ;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin:0 auto;
+        }
+        
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top:20px;
+    cursor:pointer;
+        }
+        
+#sidebar .toggle-btn span{
+    display:block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border:1px solid 
+        }
+
+
 }
 
 @media screen and (max-width:420px){
