@@ -4,29 +4,57 @@
     box-sizing: border-box;
 
 }
+.body{
+    background: rgb(251, 222, 255);
+}
 
+.historias{
+    width: 100%;
+    height: 200px;
+   
+    padding: 20px 40px;
+    margin-top: 40px;
+    background: url(./img/marchan.png);
+   
+}
 
+.parrafo{
+    padding: 20px 80px;
+    font-weight: 30px;
+    
+  }    
+
+.link{
+    background-color:#52c4df;;
+    border-radius: 10%;
+   border: 1px solid green;
+}
+.link:hover{
+    background-color: rgb(182, 240, 199);
+   
+}
 h2{
     color:white;
     padding: 40px 40px 40px 40px;
     padding: 1.25em;
     width: 100%;
-    background-color:rgb(156, 75, 231); 
+    background-color:rgb(156, 75, 231); ;
    }
 
 .img{
  
-    padding: 40px 40px 40px 40px;
+    padding: 20px 20px 20px 20px;
     width: 500px ;
     height:auto;
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    
 }
 .archivos{
    width: 400px;
    height:300px;
-   border: 2px solid green;
+   border: 2px solid #4fceeb;
    margin: 40px;
+   background-color: #a8e1ee;
 
 }
 
@@ -37,11 +65,11 @@ ul{
     padding: 20px 20px 20px 20px;
     
    }
+
 a{
     
     text-decoration: none;
-    color:blueviolet;
-    
+    color:rgb(28, 3, 53);
     padding-top: 10px;
     padding-bottom: 10px;
     display: inline-block;
@@ -50,7 +78,7 @@ a{
 a:hover{
     
 
-    color:rgb(28, 4, 51);
+    color:rgb(161, 68, 248);
     cursor: pointer;
   
     
@@ -60,4 +88,52 @@ a:hover{
     display: flex;
     flex-direction: row;
     
-   }     
+   }  
+  
+   @media screen and (max-width:850px){
+
+    .historias{
+        width: auto;
+        height:auto;
+       
+     
+     }
+
+     .archivos{
+        width: auto;
+        height:auto;
+       
+     
+     }
+   }
+
+   @media screen and (max-width:550px){
+
+    .historias{
+        width: auto;
+        height:auto;
+       
+     
+     }
+
+     .contenedor{
+        
+        flex-direction:column;
+       
+     
+     }
+
+
+     @media screen and (max-width:500px){
+
+        .img{
+            width: 350px;
+            height:auto;
+            margin-left: 20px;
+           
+         
+         }
+    
+         
+   }
+
