@@ -41,7 +41,7 @@ h2{
     padding: 40px 40px 40px 40px;
     padding: 1.25em;
     width: 100%;
-    background-color:rgb(156, 75, 231); ;
+    background-color: rgb(161, 68, 248) ;
    }
 
 .img{
@@ -60,7 +60,28 @@ h2{
    background-color: #eccfe8;
 
 }
+.archivos2{
+    width: 420px;
+    height:100%;
+    border: 2px solid #afb0b1;
+    margin: 40px;
+    background-color: #eccfe8;
+ 
+ }
+.introducion{
+  text-align: center;
+  padding: 40px 40px 40px 40px;
+ 
+ }
+.contenedor{
+    display: flex;
+ 
+ }
 .archivos:hover{
+    border-color: blueviolet;
+ 
+ }
+ .archivos:hover{
     border-color: blueviolet;
  
  }
@@ -150,12 +171,28 @@ a:hover{
      
      }
 
-     .archivos{
-        width: auto;
-        height:auto;
+    .archivos{
+       
+            width: auto;
+            height:auto;
        
      
      }
+     .archivos2{
+       
+        width: auto;
+        height:auto;
+   
+ 
+ }
+
+ .contenedor{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+  
+
+}
    }
 
    @media screen and (max-width:550px){
@@ -163,6 +200,13 @@ a:hover{
     .historias{
         width: auto;
         height:auto;
+       
+     
+     }
+     .contenedor{
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
        
      
      }
