@@ -71,6 +71,7 @@ h2{
 .introducion{
   text-align: center;
   padding: 40px 40px 40px 40px;
+  Line-height: 1.5;
  
  }
 .contenedor{
@@ -81,7 +82,7 @@ h2{
     border-color: blueviolet;
  
  }
- .archivos:hover{
+ .archivos2:hover{
     border-color: blueviolet;
  
  }
